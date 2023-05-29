@@ -13,7 +13,7 @@ Headers Or Current SessionStore =>
 Body => 
 ```
 {
-    "name": "احمد",
+    "username": "احمد",
     "password": "12233",
     "role": "EMPLOYEE"
 }
@@ -27,5 +27,5 @@ Response =>
 
 CURL command:
 ```
-curl -X POST -H 'Accept: */*' -H 'Accept-Encoding: gzip, deflate' -H 'Connection: keep-alive' -H 'Content-Length: 58' -H 'Content-Type: application/x-www-form-urlencoded' -H 'User-Agent: python-requests/2.18.4' -H 'auth-key: sdofmasdmfasdmflkmasdf' -H 'user-id: 1010' -d 'name=%D8%A7%D8%AD%D9%85%D8%AF&password=12233&role=EMPLOYEE' http://127.0.0.1:4053/user/create
+curl -X POST -H 'Accept: */*' -H 'Accept-Encoding: gzip, deflate' -H 'Connection: keep-alive' -H 'Content-Length: 62' -H 'Content-Type: application/x-www-form-urlencoded' -H 'User-Agent: python-requests/2.18.4' -H 'auth-key: sdofmasdmfasdmflkmasdf' -H 'user-id: 1010' -d 'username=%D8%A7%D8%AD%D9%85%D8%AF&password=12233&role=EMPLOYEE' http://127.0.0.1:4053/user/create
 ```
