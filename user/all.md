@@ -19,13 +19,15 @@ Response =>
             "id": 1010,
             "username": "admin",
             "is_active": true,
-            "role": "ADMIN"
+            "role": "ADMIN",
+            "password": "password123"
         },
         {
             "id": 1012,
             "username": "احمد",
             "is_active": false,
-            "role": "EMPLOYEE"
+            "role": "EMPLOYEE",
+            "password": "12233"
         }
     ]
 }
