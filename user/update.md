@@ -14,7 +14,7 @@ Body =>
 ```
 {
     "id": 1012,
-    "name": "Ahmed",
+    "username": "Ahmed",
     "password": "12233",
     "role": "EMPLOYEE"
 }
@@ -23,11 +23,11 @@ Response =>
 ```
 {
     "status": false,
-    "reason": "username is required!"
+    "reason": "is_active is required!"
 }
 ```
 
 CURL command:
 ```
-curl -X POST -H 'Accept: */*' -H 'Accept-Encoding: gzip, deflate' -H 'Connection: keep-alive' -H 'Content-Length: 47' -H 'Content-Type: application/x-www-form-urlencoded' -H 'User-Agent: python-requests/2.18.4' -H 'auth-key: sdofmasdmfasdmflkmasdf' -H 'user-id: 1010' -d 'id=1012&name=Ahmed&password=12233&role=EMPLOYEE' http://127.0.0.1:4053/user/update
+curl -X POST -H 'Accept: */*' -H 'Accept-Encoding: gzip, deflate' -H 'Connection: keep-alive' -H 'Content-Length: 51' -H 'Content-Type: application/x-www-form-urlencoded' -H 'User-Agent: python-requests/2.18.4' -H 'auth-key: sdofmasdmfasdmflkmasdf' -H 'user-id: 1010' -d 'id=1012&username=Ahmed&password=12233&role=EMPLOYEE' http://127.0.0.1:4053/user/update
 ```
