@@ -13,6 +13,7 @@ Headers Or Current SessionStore =>
 Body => 
 ```
 {
+    "id": 1011,
     "name": "Ahmed"
 }
 ```
@@ -20,11 +21,11 @@ Response =>
 ```
 {
     "status": false,
-    "reason": "user id is required!"
+    "reason": "user not found!"
 }
 ```
 
 CURL command:
 ```
-curl -X POST -H 'Accept: */*' -H 'Accept-Encoding: gzip, deflate' -H 'Connection: keep-alive' -H 'Content-Length: 10' -H 'Content-Type: application/x-www-form-urlencoded' -H 'User-Agent: python-requests/2.18.4' -H 'auth-key: sdofmasdmfasdmflkmasdf' -H 'user-id: 1010' -d name=Ahmed http://127.0.0.1:4053/user/update
+curl -X POST -H 'Accept: */*' -H 'Accept-Encoding: gzip, deflate' -H 'Connection: keep-alive' -H 'Content-Length: 18' -H 'Content-Type: application/x-www-form-urlencoded' -H 'User-Agent: python-requests/2.18.4' -H 'auth-key: sdofmasdmfasdmflkmasdf' -H 'user-id: 1010' -d 'id=1011&name=Ahmed' http://127.0.0.1:4053/user/update
 ```
