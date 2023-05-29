@@ -15,19 +15,16 @@ Body =>
 {
     "id": 1012,
     "username": "Ahmed",
+    "is_active": true,
     "password": "12233",
     "role": "EMPLOYEE"
 }
 ```
 Response => 
 ```
-{
-    "status": false,
-    "reason": "is_active is required!"
-}
-```
+b'<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request.  Either the server is overloaded or there is an error in the application.</p>\n'
 
 CURL command:
 ```
-curl -X POST -H 'Accept: */*' -H 'Accept-Encoding: gzip, deflate' -H 'Connection: keep-alive' -H 'Content-Length: 51' -H 'Content-Type: application/x-www-form-urlencoded' -H 'User-Agent: python-requests/2.18.4' -H 'auth-key: sdofmasdmfasdmflkmasdf' -H 'user-id: 1010' -d 'id=1012&username=Ahmed&password=12233&role=EMPLOYEE' http://127.0.0.1:4053/user/update
+curl -X POST -H 'Accept: */*' -H 'Accept-Encoding: gzip, deflate' -H 'Connection: keep-alive' -H 'Content-Length: 66' -H 'Content-Type: application/x-www-form-urlencoded' -H 'User-Agent: python-requests/2.18.4' -H 'auth-key: sdofmasdmfasdmflkmasdf' -H 'user-id: 1010' -d 'id=1012&username=Ahmed&is_active=True&password=12233&role=EMPLOYEE' http://127.0.0.1:4053/user/update
 ```
