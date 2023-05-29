@@ -20,7 +20,11 @@ Body =>
 ```
 Response => 
 ```
-b'<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request.  Either the server is overloaded or there is an error in the application.</p>\n'
+{
+    "status": false,
+    "reason": "Request not authorized!"
+}
+```
 
 CURL command:
 ```
