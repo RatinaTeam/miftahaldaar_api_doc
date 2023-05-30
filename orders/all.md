@@ -12,7 +12,23 @@ Headers Or Current SessionStore =>
 ```
 Response => 
 ```
-b'<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request.  Either the server is overloaded or there is an error in the application.</p>\n'
+{
+    "status": true,
+    "orders": [
+        {
+            "customer_name": "John Doe",
+            "customer_phone": "123456789",
+            "id": 1,
+            "order_type": "Type A",
+            "order_date": "2023-05-29 11:59:20",
+            "status": "ON_PROGRESS",
+            "bank_name": null,
+            "customer_salary_amount": "5000",
+            "last_update_note": null
+        }
+    ]
+}
+```
 
 CURL command:
 ```
