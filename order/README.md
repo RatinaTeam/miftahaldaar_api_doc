@@ -1,4 +1,45 @@
-Certainly! Here's an explanation of what happens in the backend for each action of the `/order/<action>` endpoint:
+`Order` class:
+
+*   `id`: An integer field representing the unique identifier of the order.
+*   `emp_id`: An integer field representing the employee ID associated with the order. It is used as an index.
+*   `emp`: A property that returns the `UserAccount` object corresponding to the employee ID (`emp_id`).
+*   `supervisor_id`: An integer field representing the supervisor ID associated with the order.
+*   `supervisor`: A property that returns the `UserAccount` object corresponding to the supervisor ID (`supervisor_id`).
+*   `order_type`: A string field representing the type of the order.
+*   `customer_name`: A string field representing the name of the customer associated with the order.
+*   `customer_phone`: A string field representing the phone number of the customer.
+*   `customer_salary_amount`: A string field representing the amount of the customer's salary.
+*   `customer_salary_deposit_bank`: A string field representing the bank where the customer's salary is deposited.
+*   `customer_employer`: A string field representing the employer of the customer.
+*   `customer_old`: A string field representing the age of the customer.
+*   `order_date`: A DateTime field representing the date and time when the order was created. It has a default value of the current date and time and is indexed.
+*   `status`: An enumeration field (`OrderStatus`) representing the status of the order. It has a default value of `OrderStatus.PENDING` and is indexed.
+*   `bank_name`: A string field representing the name of the bank associated with the order.
+*   `bank_employee_name`: A string field representing the name of the bank employee associated with the order.
+*   `duration`: A string field representing the duration of the order.
+*   `personal_financing`: A string field representing the personal financing information.
+*   `installment_amount`: A string field representing the installment amount.
+*   `premium_support`: A string field representing the premium support information.
+*   `type_of_property`: A string field representing the type of the property.
+*   `original_property_value`: A string field representing the original value of the property.
+*   `customer_id`: A string field representing the customer's ID.
+*   `owner_phone`: A string field representing the phone number of the property owner.
+*   `city_of_property`: A string field representing the city where the property is located.
+*   `property_value`: A string field representing the value of the property.
+*   `lead_source`: A string field representing the source of the lead.
+*   `is_guarantees`: A boolean field indicating whether guarantees are provided.
+*   `notes`: A Text field representing additional notes about the order. It is nullable.
+*   `is_read`: A boolean field indicating whether the order has been read.
+*   `attachments_json`: A Text field representing the JSON data of the order's attachments. It is nullable and has a default value of `data.required_attachments_json`.
+*   `evaluation_amount`: A string field representing the evaluation amount for the order. It is nullable.
+*   `paying_party`: A string field representing the paying party information. It is nullable.
+*   `obligation_check`: A boolean field indicating whether an obligation check has been performed. It has a default value of `False`.
+*   `delayed_until`: A DateTime field representing the date and time until which the order is delayed. It is nullable.
+*   `details_of_amount`: A Text field representing the details of the amount for the order. It is nullable and has a default value of '\[\]'.
+*   `completed_percentage`: A Float field representing the percentage of completion for the order. It has a default value of `0`.
+*   `last_update_note`: A Text field representing the last update note
+
+`/order/<action>` endpoint:
 
 1.  **Create**:
     
