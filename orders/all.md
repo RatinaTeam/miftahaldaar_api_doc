@@ -21,10 +21,11 @@ Response =>
             "id": 1,
             "order_type": "Type A",
             "order_date": "2023-05-29 11:59:20",
-            "status": "ON_PROGRESS",
+            "status": "DELAYED",
             "bank_name": null,
             "customer_salary_amount": "5000",
-            "last_update_note": null
+            "last_update_note": "Client is not responding",
+            "completed_percentage": 65.2173913043478
         }
     ]
 }
