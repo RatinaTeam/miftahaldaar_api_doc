@@ -38,6 +38,7 @@
 *   `details_of_amount`: A Text field representing the details of the amount for the order. It is nullable and has a default value of '\[\]'.
 *   `completed_percentage`: A Float field representing the percentage of completion for the order. It has a default value of `0`.
 *   `last_update_note`: A Text field representing the last update note
+*   `attachments_json`: A field used to store the JSON data of the order's attachments. 
 
 `/order/<action>` endpoint:
 
