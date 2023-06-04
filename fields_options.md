@@ -14,6 +14,24 @@ Response =>
 ```
 {
     "status": true,
+    "required_attachments": {
+        "صورة البطاقه": "",
+        "تعريف بالراتب": "",
+        "برنت سمه": "",
+        "كرت العائلة": "",
+        "شهادة الاعفاء الضريبي": "",
+        "بطاقة المالك": "",
+        "صورة الصك": "",
+        "رخصة البناء": "",
+        "صورة التيار الكهربائي": "",
+        "شهادة الاشغال": "",
+        "الاقرار المساحي": "",
+        "اتفاقية السعي": "",
+        "صورة السند": "",
+        "ابلكيشن البنك": "",
+        "صورة من بطاقة المتضامن": "",
+        "تعريف راتب المتضامن": ""
+    },
     "city_of_property_options_list": [
         "الرياض",
         "جده",
@@ -129,4 +147,9 @@ Response =>
 CURL command =>
 ```
 curl -X GET -H 'Accept: */*' -H 'Accept-Encoding: gzip, deflate' -H 'Connection: keep-alive' -H 'User-Agent: python-requests/2.18.4' -H 'auth-key: 18d78df6bf254dd4b9a2ad2a93f7144f' -H 'user-id: 1013' http://127.0.0.1:4053/fields_options
+```
+```
+
+Notes: bank_name_options_list => {bank_name,customer_salary_deposit_bank}
+
 ```
