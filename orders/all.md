@@ -1,7 +1,7 @@
 <_io.TextIOWrapper name='/root/miftahaldaar_api_doc//orders/all.md' mode='w+' encoding='utf-8'>
 #Get All Orders# Request =>
 
-**GET** /orders/all?```id_index```=1&```order_type```=Type A
+**GET** /orders/all?```page```=1&```id_index```=900
 
 Headers Or Current SessionStore =>
 ```
@@ -18,14 +18,14 @@ Response =>
         {
             "customer_name": "John Doe",
             "customer_phone": "123456789",
-            "id": 1,
+            "id": 1011,
             "order_type": "Type A",
-            "order_date": "2023-05-29 11:59:20",
-            "status": "DELAYED",
+            "order_date": "2023-06-05 07:45:36",
+            "status": null,
             "bank_name": null,
             "customer_salary_amount": "5000",
-            "last_update_note": "Client is not responding",
-            "completed_percentage": 65.2173913043478
+            "last_update_note": null,
+            "completed_percentage": 0.0
         }
     ]
 }
@@ -33,5 +33,12 @@ Response =>
 
 CURL command:
 ```
-curl -X GET -H 'Accept: */*' -H 'Accept-Encoding: gzip, deflate' -H 'Connection: keep-alive' -H 'User-Agent: python-requests/2.18.4' -H 'auth-key: 18d78df6bf254dd4b9a2ad2a93f7144f' -H 'user-id: 1013' 'http://127.0.0.1:4053/orders/all?id_index=1&order_type=Type+A'
+curl -X GET -H 'Accept: */*' -H 'Accept-Encoding: gzip, deflate' -H 'Connection: keep-alive' -H 'User-Agent: python-requests/2.18.4' -H 'auth-key: 18d78df6bf254dd4b9a2ad2a93f7144f' -H 'user-id: 1013' 'http://127.0.0.1:4053/orders/all?page=1&id_index=900'
+```
+```
+
+Notes: Page => page number
+id_index => max(id) you load if previous to load news orders
+filter by [order_type, customer_name, customer_phone, customer_salary_amount, customer_salary_deposit_bank, customer_employer, customer_old, bank_employee_name, property_value]
+
 ```
