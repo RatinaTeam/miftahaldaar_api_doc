@@ -30,12 +30,12 @@
 *   `is_guarantees`: A boolean field indicating whether guarantees are provided.
 *   `notes`: A Text field representing additional notes about the order. It is nullable.
 *   `is_read`: A boolean field indicating whether the order has been read.
-*   `attachments_json`: A Text field representing the JSON data of the order's attachments. It is nullable and has a default value of `data.required_attachments_json`.
+*   `attachments_json`: A Text field representing the `JSON` data of the order's attachments. It is nullable and has a default value of `data.required_attachments_json`.
 *   `evaluation_amount`: A string field representing the evaluation amount for the order. It is nullable.
 *   `paying_party`: A string field representing the paying party information. It is nullable.
 *   `obligation_check`: A boolean field indicating whether an obligation check has been performed. It has a default value of `False`.
 *   `delayed_until`: A DateTime field representing the date and time until which the order is delayed. It is nullable.
-*   `details_of_amount`: A Text field representing the details of the amount for the order. It is nullable and has a default value of '\[\]'.
+*   `details_of_amount`: A Text field representing the `JSON` details of the amount for the order. It is nullable and has a default value of '\[\]'.
 *   `completed_percentage`: A Float field representing the percentage of completion for the order. It has a default value of `0`.
 *   `last_update_note`: A Text field representing the last update note
 *   `attachments_json`: A field used to store the JSON data of the order's attachments. 
