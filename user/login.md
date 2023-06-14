@@ -17,7 +17,9 @@ Body =>
 Response => 
 ```
 {
-    "status": true
+    "status": true,
+    "user_id": 1010,
+    "auth_key": "sdofmasdmfasdmflkmasdf"
 }
 ```
 
